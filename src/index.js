@@ -2,8 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
-import AddingKeysTolists from './AddingKeysToLists'
-import FetchingDataWithHooks from './FetchingDataWithHooks'
+import AddingKeysTolists from './lessons/AddingKeysToLists'
+import FetchingDataWithHooks from './lessons/FetchingDataWithHooks'
 
 ReactDOM.render(<FetchingDataWithHooks />, document.getElementById('root'));
 
