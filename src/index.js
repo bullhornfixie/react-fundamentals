@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { BrowserRouter as Router } from "react-router-dom";
 import './index.css';
 import App from './App';
 import AddingKeysTolists from './lessons/AddingKeysToLists'
@@ -8,7 +9,6 @@ import DisplayingDataFromAnAPI from './lessons/DisplayingDataFromAnAPI'
 import RenderComponentsConditionally from './lessons/RenderComponentsConditionally'
 import HandlingLoadingStates from './lessons/HandlingLoadingStates'
 import AppTest from './AppTest'
-import { BrowserRouter as Router } from "react-router-dom";
 
 ReactDOM.render(
   <Router> 
