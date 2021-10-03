@@ -15,11 +15,13 @@ function DisplayingDataFromAnAPI() {
     setLoading(true)
     fetch(`https://api.github.com/users/${login}`)
       .then((response) => response.json())
-      .then(setData)
+      .then(setData) // this will populate an Object
       .then(() => setLoading(false)) // setLoading to false after loaded 
       .catch(setError); // catches JavaScript errors and provides a fall back UI rather than component tree that crashed
   }, [login]); // by passing this dependancy anytime this value changes we want to call useEffect (this currently happens only after render)
 
+  console.log(data)
+  
   if (loading) return <h1>Loading...</h1>;
   if (!data) return null;
 
